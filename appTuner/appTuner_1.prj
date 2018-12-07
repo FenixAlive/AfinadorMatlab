@@ -1,0 +1,93 @@
+<deployment-project plugin="plugin.webdeploy" plugin-version="1.0">
+  <configuration file="/home/angel/Dropbox/rob/tercero/metNum/Proyecto/appTuner_1.prj" location="/home/angel/Dropbox/rob/tercero/metNum/Proyecto" name="appTuner_1" target="target.webdeploy" target-name="Web App Compiler">
+    <param.appname>FourierTuner</param.appname>
+    <param.version>1.0</param.version>
+    <param.displayname>FourierTuner</param.displayname>
+    <param.authnamewatermark>Luis Angel Muñoz Franco</param.authnamewatermark>
+    <param.summary />
+    <param.screenshot>/tmp/tpc37a7dec_2b29_47e1_b60c_d68c57ca08be.png</param.screenshot>
+    <param.intermediate>${PROJECT_ROOT}/appTuner_1/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/appTuner_1/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/appTuner_1/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/appTuner_1</param.logdir>
+    <param.target.type>subtarget.web.app</param.target.type>
+    <param.user.defined.mcr.options />
+    <unset>
+      <param.version />
+      <param.displayname />
+      <param.summary />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.target.type />
+      <param.user.defined.mcr.options />
+    </unset>
+    <fileset.web.main>
+      <file>${PROJECT_ROOT}/appTuner.mlapp</file>
+    </fileset.web.main>
+    <fileset.resources />
+    <fileset.depfun />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/appTuner_1/for_testing" name="FourierTuner.ctf" optional="false">/home/angel/Dropbox/rob/tercero/metNum/Proyecto/appTuner_1/for_testing/FourierTuner.ctf</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/media/angel/Data/Linux/Matlab</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>4.19.6-041906-generic</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
